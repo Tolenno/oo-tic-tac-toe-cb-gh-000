@@ -32,5 +32,9 @@ class TicTacToe
   def input_to_index(user_input) #converts string input from gets to an integer so it can be used to access array indices
     user_input.to_i - 1
   end
+  
+  def move(position, current_player) #moves player marker (X or O) to their desired position on the board
+    board[position] = current_player
+  end
 
 end
