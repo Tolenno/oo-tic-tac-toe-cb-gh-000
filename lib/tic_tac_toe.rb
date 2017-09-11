@@ -57,7 +57,7 @@ class TicTacToe
 
     #determines the current player (X or O) - because X always goes first, #turn_count will always be uneven before X's go
     def current_player
-      count = turn_count(board)
+      count = turn_count
       if count.even?
         return "X"
       else
