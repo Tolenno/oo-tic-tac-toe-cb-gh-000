@@ -66,15 +66,15 @@ class TicTacToe
 
 
     def turn #turn calls on the above helper methods to get input from the user and record a turn
-      player = current_player(board)
+      player = current_player
       got_valid = false
       puts "Please choose a position between 1-9:"
       while got_valid == false
         user_input = gets.strip
         position = input_to_index(user_input)
-        if valid_move?(board, position)
-          move(board, position, player)
-          display_board(board)
+        if valid_move?(position)
+          move(position, player)
+          display_board
           got_valid = true
         end
       end
