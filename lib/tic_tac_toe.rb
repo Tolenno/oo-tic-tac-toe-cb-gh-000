@@ -20,7 +20,7 @@ class TicTacToe
 
   ]
 
-  def display_board
+  def display_board #displays the board layout to the user in the command line
     rows = [" #{@board[0]} | #{@board[1]} | #{@board[2]} ", "-----------", " #{@board[3]} | #{@board[4]} | #{@board[5]} ", "-----------", " #{@board[6]} | #{@board[7]} | #{@board[8]} "]
     puts rows[0]
     puts rows[1]
@@ -28,4 +28,10 @@ class TicTacToe
     puts rows[3]
     puts rows[4]
   end
+
+  def input_to_index(user_input) #converts string input from gets to an integer so it can be used to access array indices
+    user_input.to_i - 1
+  end
+  
 end
+
