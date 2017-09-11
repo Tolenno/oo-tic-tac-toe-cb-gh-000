@@ -123,8 +123,8 @@ class TicTacToe
     end
 
     def play #the play method is the method that rus the game using the helpr methods
-      while !over?(board)
-      turn(board)
+      while !over?
+      turn
       end
       if won?(board)
         puts "Congratulations #{winner(board)}!"
