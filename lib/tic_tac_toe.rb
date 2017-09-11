@@ -115,4 +115,13 @@ class TicTacToe
       end
     end
 
+    
+    def winner(board) #returns the current player (X or O) depending on who won
+      if won?(board) && board[won?(board)[0]] == "X"
+        return "X"
+      elsif won?(board) && board[won?(board)[0]] == "O"
+        return "O"
+      end
+    end
+
 end
