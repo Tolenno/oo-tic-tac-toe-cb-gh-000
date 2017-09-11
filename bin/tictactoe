@@ -6,5 +6,3 @@ game = new.TicTacToe
 
 TicTacToe.play
 
-Instantiate an instance of TicTacToe
-Start the game by calling #play on that instance.
