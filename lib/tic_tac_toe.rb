@@ -34,7 +34,7 @@ class TicTacToe
   end
 
   def move(position, current_player) #moves player marker (X or O) to their desired position on the board
-    board[position] = current_player
+    @board[position] = current_player
   end
 
 end
