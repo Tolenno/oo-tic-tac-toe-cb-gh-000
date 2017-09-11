@@ -86,7 +86,7 @@ class TicTacToe
         pos_two = win_combo[1]
         pos_three = win_combo[2]
 
-        if board[pos_one] != " " && board[pos_one] == board[pos_two] && board[pos_two] == board[pos_three]
+        if @board[pos_one] != " " && @board[pos_one] == @board[pos_two] && @board[pos_two] == @board[pos_three]
           return win_combo
         end
       end
