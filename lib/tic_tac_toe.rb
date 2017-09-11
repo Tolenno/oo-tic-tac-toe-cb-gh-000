@@ -42,4 +42,9 @@ class TicTacToe
     @board[position] != " " && @board[position] != ""
   end
 
+  
+  def valid_move?(position) #checks if move is on the board or if the position is taken
+    position.between?(0, 8) && !position_taken?(position)
+  end
+
 end
