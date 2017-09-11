@@ -37,8 +37,8 @@ class TicTacToe
     @board[position] = current_player
   end
 
-  
-  def position_taken?(board, position) #checks if the position is taken
+
+  def position_taken?(position) #checks if the position is taken
     board[position] != " " && board[position] != ""
   end
 
