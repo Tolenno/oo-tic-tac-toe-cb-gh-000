@@ -55,13 +55,28 @@ class TicTacToe
       return count
     end
 
-    #determines the current player (X or O) - because X always goes first, #turn_count will always be uneven before X's go
-    def current_player
+    def current_player  #determines the current player (X or O) - because X always goes first, #turn_count will always be uneven before X's go
       count = turn_count
       if count.even?
         return "X"
       else
         return "O"
+      end
+    end
+
+    
+    def turn(board) #turn calls on the above helper methods to get input from the user and record a turn
+      player = current_player(board)
+      got_valid = false
+      puts "Please choose a position between 1-9:"
+      while got_valid == false
+        user_input = gets.strip
+        position = input_to_index(user_input)
+        if valid_move?(board, position)
+          move(board, position, player)
+          display_board(board)
+          got_valid = true
+        end
       end
     end
 
