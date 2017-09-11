@@ -3,7 +3,7 @@ class TicTacToe
     @board = board
   end
 
-  def initialize(board)
-    @board
+  def board=(board)
+    @board = board
 
 end
