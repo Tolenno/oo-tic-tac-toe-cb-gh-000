@@ -39,7 +39,7 @@ class TicTacToe
 
 
   def position_taken?(position) #checks if the position is taken
-    board[position] != " " && board[position] != ""
+    @board[position] != " " && @board[position] != ""
   end
 
 end
