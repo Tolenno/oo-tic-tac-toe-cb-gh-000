@@ -85,12 +85,17 @@ class TicTacToe
         pos_one = win_combo[0]
         pos_two = win_combo[1]
         pos_three = win_combo[2]
-    
+
         if board[pos_one] != " " && board[pos_one] == board[pos_two] && board[pos_two] == board[pos_three]
           return win_combo
         end
       end
       false
+    end
+
+    #returns true if the board is full (draw)
+    def full?
+      !@board.include?(" ")
     end
 
 end
