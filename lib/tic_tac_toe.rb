@@ -122,8 +122,7 @@ class TicTacToe
       end
     end
 
-    #the play method is the method that rus the game using the helpr methods
-    def play(board)
+    def play(board) #the play method is the method that rus the game using the helpr methods
       while !over?(board)
       turn(board)
       end
