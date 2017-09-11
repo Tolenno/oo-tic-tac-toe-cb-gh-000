@@ -107,4 +107,12 @@ class TicTacToe
       end
     end
 
+    def over?(board) #returns true if the game is ovr (win/draw)
+      if won?(board) || draw?(board)
+        true
+    else
+      false
+      end
+    end
+
 end
