@@ -80,7 +80,7 @@ class TicTacToe
       end
     end
 
-    def won?(board) #determines whether or not a player has won and returns the winning combination if there is a win and false if there isn't
+    def won? #determines whether or not a player has won and returns the winning combination if there is a win and false if there isn't
       WIN_COMBINATIONS.each do |win_combo|
         pos_one = win_combo[0]
         pos_two = win_combo[1]
