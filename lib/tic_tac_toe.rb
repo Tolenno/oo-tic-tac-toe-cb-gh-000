@@ -108,13 +108,12 @@ class TicTacToe
     end
 
     def over? #returns true if the game is ovr (win/draw)
-      if won? || draw?
-        true
+      if won? || draw? ? true : false
       end
     end
 
 
-    def winner(board) #returns the current player (X or O) depending on who won
+    def winner #returns the current player (X or O) depending on who won
       if won?(board) && board[won?(board)[0]] == "X"
         return "X"
       elsif won?(board) && board[won?(board)[0]] == "O"
