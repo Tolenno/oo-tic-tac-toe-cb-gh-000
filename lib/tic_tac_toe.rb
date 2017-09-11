@@ -110,8 +110,6 @@ class TicTacToe
     def over? #returns true if the game is ovr (win/draw)
       if won? || draw?
         true
-    else
-      false
       end
     end
 
