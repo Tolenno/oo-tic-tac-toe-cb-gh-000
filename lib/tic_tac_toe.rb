@@ -97,8 +97,7 @@ class TicTacToe
       !@board.include?(" ")
     end
 
-    #returns true if the board has not been won but is full, false if the board is not won and the board is not full, and false if the board is won
-    def draw?
+    def draw? #returns true if the board has not been won but is full, false if the board is not won and the board is not full, and false if the board is won
       if won?
         false
       elsif full?
